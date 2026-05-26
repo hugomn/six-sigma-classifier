@@ -1,54 +1,40 @@
 {
-  "model": "Baseline Keyword Detector (v0.1)",
-  "method": "Text-based failure keyword detection",
-  "dataset": {
-    "name": "Six Sigma Phase 1 Corpus",
-    "size": 63,
-    "source": "Cemri et al. 2025 (arxiv 2503.13657)",
-    "n_agents": 6,
-    "n_llms": 2,
-    "n_benchmarks": 6
-  },
-  "features": [
-    "failure_keyword_presence",
-    "failure_keyword_count",
-    "agent_name",
-    "llm_name",
-    "benchmark_name",
-    "trajectory_length"
-  ],
-  "failure_keywords": [
-    "error",
-    "failed",
-    "exception",
-    "traceback",
-    "warning",
-    "crashed",
-    "fault",
-    "invalid",
-    "unable",
-    "could not",
-    "cannot",
-    "denied",
-    "rejected",
-    "timeout"
-  ],
-  "evaluation": {
-    "accuracy": 1.0,
-    "precision": 1.0,
-    "recall": 1.0,
-    "f1_score": 1.0,
-    "confusion_matrix": {
-      "true_negatives": 12,
-      "false_positives": 0,
-      "false_negatives": 0,
-      "true_positives": 51
+  "dataset_size": 63,
+  "methodology": "in-sample keyword detection baseline",
+  "disclaimer": "Fit and evaluated on same corpus; not a generalization metric",
+  "failure_count": 37,
+  "success_count": 7,
+  "failure_rate": 0.5873015873015873,
+  "per_agent_breakdown": {
+    "AG2": {
+      "failures": 20,
+      "total": 25,
+      "failure_rate": 0.8
     },
-    "failure_distribution": {
-      "success_count": 12,
-      "failure_count": 51,
-      "failure_rate": 0.8095238095238095
+    "AppWorld": {
+      "failures": 1,
+      "total": 1,
+      "failure_rate": 1.0
+    },
+    "ChatDev": {
+      "failures": 1,
+      "total": 1,
+      "failure_rate": 1.0
+    },
+    "Magentic": {
+      "failures": 6,
+      "total": 6,
+      "failure_rate": 1.0
+    },
+    "MetaGPT": {
+      "failures": 8,
+      "total": 10,
+      "failure_rate": 0.8
+    },
+    "OpenManus": {
+      "failures": 1,
+      "total": 1,
+      "failure_rate": 1.0
     }
-  },
-  "notes": "Baseline model using keyword detection. Next iteration: train supervised classifier on labeled corpus."
+  }
 }

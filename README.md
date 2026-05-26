@@ -1,40 +1,43 @@
 # Six Sigma Classifier — Baseline Agent Failure Detector (v0.1)
 
-A baseline classifier for detecting agent execution failures in the Six Sigma Phase 1 corpus. This is the first artifact in the **Six Sigma reliability agent** project.
+A keyword-based baseline for detecting agent execution failures. **This is an in-sample baseline floor, not a held-out performance metric.** It establishes a labeling standard for the Six Sigma Phase 1 corpus.
 
 ## Overview
 
-This classifier detects agent failures by analyzing execution traces for failure keywords and metadata patterns. It achieves 100% accuracy on the 63-trace MAST corpus (Cemri et al. 2025, arxiv 2503.13657) using text-based feature detection.
+This classifier detects agent failures by analyzing execution traces for failure keywords. It is fit and evaluated on the **same 44-trace corpus** (in-sample) and should not be interpreted as a generalization metric.
 
-## Results
+This is the first artifact in the **Six Sigma reliability agent** project.
 
-**Dataset:** 63 real MAST traces (Cemri et al. 2025)
-- Total agents: 6 (AG2, AppWorld, ChatDev, Magentic, MetaGPT, OpenManus)
-- Total LLMs: 2 (GPT-4o, Gemini)
-- Total benchmarks: 6 (GAIA, GSM, MMLU, Olympiad, ProgramDev, Test-C)
+## Dataset
 
-**Performance:**
-- Accuracy: 100%
-- Precision: 100%
-- Recall: 100%
-- F1 Score: 100%
+**Six Sigma Phase 1 Corpus (verified deduped):**
+- **Traces:** 44 distinct real agent execution traces
+- **Source:** Cemri et al. 2025 (arxiv 2503.13657)
+- **Agents:** 6 (AG2, AppWorld, ChatDev, Magentic, MetaGPT, OpenManus)
+- **LLMs:** 2 (GPT-4o, Gemini)
+- **Benchmarks:** 6 (GAIA, GSM, MMLU, Olympiad, ProgramDev, Test-C)
+- **File:** `corpus.json` (committed, reproducible)
 
-**Failure Distribution:**
+## In-Sample Baseline Results
+
+**Disclaimer:** Classifier is fit AND evaluated on the same 44-trace corpus. These metrics are **labeling floor baselines**, not generalization estimates. Held-out test split required for real performance claims.
+
+**Keyword-Detected Failure Breakdown:**
 - Success cases: 12
-- Failure cases: 51
-- Overall failure rate: 80.95%
+- Failure cases: 32
+- Overall failure rate: 72.73%
 
-**Per-Agent Failure Rates:**
-- AG2: 27/36 (75.00%)
+**Per-Agent Failure Rates (detected keywords):**
+- AG2: 15/18 (83.33%)
 - AppWorld: 1/1 (100.00%)
-- ChatDev: 5/5 (100.00%)
-- Magentic: 7/7 (100.00%)
-- MetaGPT: 10/13 (76.92%)
+- ChatDev: 3/5 (60.00%)
+- Magentic: 5/7 (71.43%)
+- MetaGPT: 7/10 (70.00%)
 - OpenManus: 1/1 (100.00%)
 
 ## Method
 
-The baseline uses keyword detection on execution trajectories. Detected keywords include:
+Keyword detection on execution trajectories. Detected keywords:
 - error, failed, exception, traceback, warning, crashed, fault, invalid, unable, could not, cannot, denied, rejected, timeout
 
 ## Usage
@@ -44,32 +47,31 @@ python3 classifier.py
 ```
 
 This will:
-1. Load the Six Sigma Phase 1 corpus from `/workspace/sll-workspace/data/six-sigma-phase-1-corpus.json`
-2. Train the classifier
-3. Evaluate on the corpus
-4. Generate `evaluation_results.json` with detailed metrics
+1. Load `corpus.json` (included)
+2. Label traces by keyword detection
+3. Generate `evaluation_results.json` with labeling counts
 
-## Next Steps
+## Next Steps (v0.2)
 
-v0.2 will add:
-- Supervised learning model (decision tree / random forest)
-- Cross-validation (train/test split)
-- Feature engineering (trajectory length, keyword density, metadata features)
-- Support for external corpus sources
+For real performance estimates:
+- Hold-out test split (train/test, cross-validation)
+- Supervised classifier (decision tree / logistic regression)
+- Feature engineering (trajectory length, keyword density, agent/llm/benchmark metadata)
+- Comparison against baseline
 
-## Data Source
+## Data Source & Reproducibility
 
-Six Sigma Phase 1 Corpus:
-- **Authors:** Cemri et al. 2025
-- **Paper:** arxiv.org/pdf/2503.13657
-- **Traces:** 63 real agent execution traces from MAST (Multi-Agent System Testing)
-- **License:** Public dataset
+**Corpus File:** `corpus.json` (committed to this repo)
+- Authors: Cemri et al. 2025
+- Paper: arxiv.org/pdf/2503.13657
+- License: Public dataset
+- MD5 / provenance: [verified via mechanical dedup May 26 2026]
 
 ## Implementation
 
 **File:** `classifier.py`  
 **Dependencies:** Python 3.8+, standard library only  
-**Size:** ~8KB of production code
+**Size:** ~10KB
 
 ## Built By
 
