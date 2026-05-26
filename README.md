@@ -1,77 +1,100 @@
-# Six Sigma Classifier — Baseline Agent Failure Detector (v0.1)
+# Six Sigma Classifier — Failure-Mode Detection (v0.2)
 
-A keyword-based baseline for detecting agent execution failures. **This is an in-sample baseline floor, not a held-out performance metric.** It establishes a labeling standard for the Six Sigma Phase 1 corpus.
+A supervised failure-mode classifier for detecting which **MAST failure mode** a given agent failure belongs to. **This is the second iteration building on the v0.1 baseline.**
 
 ## Overview
 
-This classifier detects agent failures by analyzing execution traces for failure keywords. It is fit and evaluated on the **same 44-trace corpus** (in-sample) and should not be interpreted as a generalization metric.
+This classifier takes an agent execution failure and predicts which of the 10 failure modes it represents. Unlike v0.1 (binary success/failure keyword detection), v0.2 is a **multi-class failure-mode classifier** trained on real failure traces only.
 
-This is the first artifact in the **Six Sigma reliability agent** project.
+**Key constraints:**
+- No synthetic data (only 44 real failure traces in corpus)
+- Failure-mode scope (not success/failure binary)
+- Real agent execution data (Cemri et al. 2025)
 
 ## Dataset
 
-**Six Sigma Phase 1 Corpus (verified deduped):**
-- **Traces:** 44 distinct real agent execution traces
+**Six Sigma Phase 1 Corpus (Failure Subset):**
+- **Traces:** 44 distinct real agent execution failures
+- **Failure modes:** 10 MAST modes (1.1, 1.3, 1.5, 2.2, 2.3, 2.4, 2.6, 3.1, 3.2, 3.3)
 - **Source:** Cemri et al. 2025 (arxiv 2503.13657)
 - **Agents:** 6 (AG2, AppWorld, ChatDev, Magentic, MetaGPT, OpenManus)
 - **LLMs:** 2 (GPT-4o, Gemini)
 - **Benchmarks:** 6 (GAIA, GSM, MMLU, Olympiad, ProgramDev, Test-C)
-- **File:** `corpus.json` (committed, reproducible)
 
-## In-Sample Baseline Results
+**Mode distribution:**
+- Mode 1.1: 7 traces
+- Mode 1.3: 7 traces
+- Mode 2.6: 7 traces
+- Mode 2.2: 6 traces
+- Mode 3.2: 6 traces
+- Mode 1.5: 3 traces
+- Mode 3.1: 3 traces
+- Mode 2.3: 2 traces
+- Mode 3.3: 2 traces
+- Mode 2.4: 1 trace
 
-**Disclaimer:** Classifier is fit AND evaluated on the same 44-trace corpus. These metrics are **labeling floor baselines**, not generalization estimates. Held-out test split required for real performance claims.
+## Baseline Results (v0.2)
 
-**Keyword-Detected Failure Breakdown:**
-- Success cases: 12
-- Failure cases: 32
-- Overall failure rate: 72.73%
+**In-sample performance on 44 failure traces:**
+- **Model:** SimpleClassifier (agent + benchmark majority vote)
+- **Overall Accuracy:** 36.36% (16/44 correct)
 
-**Per-Agent Failure Rates (detected keywords):**
-- AG2: 15/18 (83.33%)
-- AppWorld: 1/1 (100.00%)
-- ChatDev: 3/5 (60.00%)
-- Magentic: 5/7 (71.43%)
-- MetaGPT: 7/10 (70.00%)
-- OpenManus: 1/1 (100.00%)
+**Per-mode performance (on failures only):**
+- Mode 1.1: Precision 50%, Recall 57% (3/7 correct)
+- Mode 1.3: Precision 20%, Recall 57% (4/7 correct)
+- Mode 2.6: Precision 100%, Recall 29% (2/7 correct)
+- Mode 3.2: Precision 40%, Recall 67% (4/6 correct)
+- Mode 3.3: Precision 50%, Recall 100% (2/2 correct)
+- Others: Precision 0% (rare classes, single samples)
+
+**Interpretation:**
+Baseline accuracy is low (36%) because failure-mode distribution is imbalanced (rare modes like 2.4, 2.3 are single samples) and purely agent/benchmark features are insufficient. Modes with multiple traces show better recall (1.1, 1.3, 3.2, 3.3); rare modes are underfitted.
+
+**Next steps (v0.3):**
+- Feature engineering from execution traces (error density, trajectory length, step types)
+- Handling class imbalance (oversampling rare modes, stratified k-fold)
+- Supervised ML with held-out validation set
+- Comparison against v0.1 keyword-based approach
 
 ## Method
 
-Keyword detection on execution trajectories. Detected keywords:
-- error, failed, exception, traceback, warning, crashed, fault, invalid, unable, could not, cannot, denied, rejected, timeout
+**Classifier:** SimpleClassifier (pure Python, no dependencies)
+- Extracts (agent, benchmark) pairs
+- Predicts most common failure mode for each pair
+- Baseline for comparison with supervised learning
+
+**Implementation:**
+- `classifier_v0.2.py`: Train and evaluate classifier
+- `evaluation_results_v0.2.json`: Metrics and per-mode stats
 
 ## Usage
 
 ```bash
-python3 classifier.py
+python3 classifier_v0.2.py
 ```
 
-This will:
-1. Load `corpus.json` (included)
-2. Label traces by keyword detection
-3. Generate `evaluation_results.json` with labeling counts
+Outputs:
+1. Console: accuracy, per-mode precision/recall
+2. File: `evaluation_results_v0.2.json` with full results
 
-## Next Steps (v0.2)
+## Reproducibility
 
-For real performance estimates:
-- Hold-out test split (train/test, cross-validation)
-- Supervised classifier (decision tree / logistic regression)
-- Feature engineering (trajectory length, keyword density, agent/llm/benchmark metadata)
-- Comparison against baseline
-
-## Data Source & Reproducibility
-
-**Corpus File:** `corpus.json` (committed to this repo)
-- Authors: Cemri et al. 2025
-- Paper: arxiv.org/pdf/2503.13657
+**Corpus:** `corpus.json` (44 real failure traces, committed)
+- Deduplicated from original 63 traces (verified May 26 2026)
+- Authors: Cemri et al. 2025, arxiv 2503.13657
 - License: Public dataset
-- MD5 / provenance: [verified via mechanical dedup May 26 2026]
+- Provenance: Verified real execution traces, no synthetic data
 
-## Implementation
+**Code:** Pure Python 3.8+, no external dependencies (sklearn, pandas, etc.)
 
-**File:** `classifier.py`  
-**Dependencies:** Python 3.8+, standard library only  
-**Size:** ~10KB
+## Design Rationale
+
+v0.2 pivots from binary success/failure classification to **failure-mode multi-class** because:
+
+1. **No real successes available:** MAST corpus contains only failures; synthetic success cases would violate data integrity
+2. **Failure-mode value:** Predicting which failure mode reveals **why** agents failed (more actionable than binary detection)
+3. **Timeline:** Single-model scope (44 failures) ships faster than corpus expansion for balanced train/test
+4. **Precondition:** Failure-mode labels (`primary_mast_mode`) already present in corpus, no new labeling required
 
 ## Built By
 
