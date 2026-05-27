@@ -1,0 +1,1619 @@
+[
+  {
+    "trace_id": 18,
+    "mas_name": "MetaGPT",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "ProgramDev",
+    "true_mode": "1.1",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Deming",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "1.1"
+      }
+    ],
+    "vote_distribution": {
+      "1.1": 5
+    },
+    "consensus_mode": "1.1",
+    "consensus_count": 5,
+    "consensus_reached": true,
+    "agreement_rate": 1.0
+  },
+  {
+    "trace_id": 38,
+    "mas_name": "AG2",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "MMLU",
+    "true_mode": "1.1",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "1.5"
+      },
+      {
+        "agent": "Deming",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "1.1"
+      }
+    ],
+    "vote_distribution": {
+      "1.1": 4,
+      "1.5": 1
+    },
+    "consensus_mode": "1.1",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  },
+  {
+    "trace_id": 5,
+    "mas_name": "OpenManus",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "ProgramDev",
+    "true_mode": "1.1",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Deming",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "1.1"
+      }
+    ],
+    "vote_distribution": {
+      "1.1": 5
+    },
+    "consensus_mode": "1.1",
+    "consensus_count": 5,
+    "consensus_reached": true,
+    "agreement_rate": 1.0
+  },
+  {
+    "trace_id": 137,
+    "mas_name": "AG2",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "MMLU",
+    "true_mode": "1.1",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Deming",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "2.2"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "1.1"
+      }
+    ],
+    "vote_distribution": {
+      "1.1": 4,
+      "2.2": 1
+    },
+    "consensus_mode": "1.1",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  },
+  {
+    "trace_id": 131,
+    "mas_name": "AG2",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "MMLU",
+    "true_mode": "1.1",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Deming",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "1.1"
+      }
+    ],
+    "vote_distribution": {
+      "1.1": 4,
+      "2.6": 1
+    },
+    "consensus_mode": "1.1",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  },
+  {
+    "trace_id": 57,
+    "mas_name": "MetaGPT",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "ProgramDev",
+    "true_mode": "1.1",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Deming",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "1.1"
+      }
+    ],
+    "vote_distribution": {
+      "1.1": 5
+    },
+    "consensus_mode": "1.1",
+    "consensus_count": 5,
+    "consensus_reached": true,
+    "agreement_rate": 1.0
+  },
+  {
+    "trace_id": 98,
+    "mas_name": "MetaGPT",
+    "llm_name": "Claude",
+    "benchmark_name": "ProgramDev",
+    "true_mode": "1.1",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "1.5"
+      },
+      {
+        "agent": "Deming",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "1.1"
+      }
+    ],
+    "vote_distribution": {
+      "1.1": 3,
+      "1.5": 1,
+      "2.6": 1
+    },
+    "consensus_mode": "1.1",
+    "consensus_count": 3,
+    "consensus_reached": true,
+    "agreement_rate": 0.6
+  },
+  {
+    "trace_id": 45,
+    "mas_name": "AG2",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "MMLU",
+    "true_mode": "1.3",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Deming",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "1.3"
+      }
+    ],
+    "vote_distribution": {
+      "1.3": 5
+    },
+    "consensus_mode": "1.3",
+    "consensus_count": 5,
+    "consensus_reached": true,
+    "agreement_rate": 1.0
+  },
+  {
+    "trace_id": 85,
+    "mas_name": "MetaGPT",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "ProgramDev",
+    "true_mode": "1.3",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Deming",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "1.3"
+      }
+    ],
+    "vote_distribution": {
+      "1.3": 5
+    },
+    "consensus_mode": "1.3",
+    "consensus_count": 5,
+    "consensus_reached": true,
+    "agreement_rate": 1.0
+  },
+  {
+    "trace_id": 63,
+    "mas_name": "AG2",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "Olympiad",
+    "true_mode": "1.3",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Deming",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "1.5"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "1.3"
+      }
+    ],
+    "vote_distribution": {
+      "1.3": 4,
+      "1.5": 1
+    },
+    "consensus_mode": "1.3",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  },
+  {
+    "trace_id": 64,
+    "mas_name": "AG2",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "Olympiad",
+    "true_mode": "1.3",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Deming",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "3.3"
+      }
+    ],
+    "vote_distribution": {
+      "1.3": 4,
+      "3.3": 1
+    },
+    "consensus_mode": "1.3",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  },
+  {
+    "trace_id": 178,
+    "mas_name": "AG2",
+    "llm_name": "Claude",
+    "benchmark_name": "GSM",
+    "true_mode": "1.3",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Deming",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "2.6"
+      }
+    ],
+    "vote_distribution": {
+      "1.3": 4,
+      "2.6": 1
+    },
+    "consensus_mode": "1.3",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  },
+  {
+    "trace_id": 72,
+    "mas_name": "AG2",
+    "llm_name": "Claude",
+    "benchmark_name": "GSM",
+    "true_mode": "1.3",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Deming",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "1.3"
+      }
+    ],
+    "vote_distribution": {
+      "1.3": 4,
+      "2.6": 1
+    },
+    "consensus_mode": "1.3",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  },
+  {
+    "trace_id": 7,
+    "mas_name": "MetaGPT",
+    "llm_name": "Claude",
+    "benchmark_name": "ProgramDev",
+    "true_mode": "1.3",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Deming",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "1.3"
+      }
+    ],
+    "vote_distribution": {
+      "3.2": 1,
+      "1.3": 4
+    },
+    "consensus_mode": "1.3",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  },
+  {
+    "trace_id": 83,
+    "mas_name": "AG2",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "MMLU",
+    "true_mode": "1.5",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "1.5"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "1.5"
+      },
+      {
+        "agent": "Deming",
+        "vote": "1.5"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "1.5"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "2.2"
+      }
+    ],
+    "vote_distribution": {
+      "1.5": 4,
+      "2.2": 1
+    },
+    "consensus_mode": "1.5",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  },
+  {
+    "trace_id": 82,
+    "mas_name": "AG2",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "Olympiad",
+    "true_mode": "1.5",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "1.5"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "1.5"
+      },
+      {
+        "agent": "Deming",
+        "vote": "1.5"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "1.5"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "1.5"
+      }
+    ],
+    "vote_distribution": {
+      "1.5": 5
+    },
+    "consensus_mode": "1.5",
+    "consensus_count": 5,
+    "consensus_reached": true,
+    "agreement_rate": 1.0
+  },
+  {
+    "trace_id": 171,
+    "mas_name": "AG2",
+    "llm_name": "Claude",
+    "benchmark_name": "GSM",
+    "true_mode": "1.5",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "1.5"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "1.5"
+      },
+      {
+        "agent": "Deming",
+        "vote": "1.5"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "1.5"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "3.3"
+      }
+    ],
+    "vote_distribution": {
+      "1.5": 4,
+      "3.3": 1
+    },
+    "consensus_mode": "1.5",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  },
+  {
+    "trace_id": 120,
+    "mas_name": "AG2",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "Olympiad",
+    "true_mode": "2.2",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "2.2"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "2.2"
+      },
+      {
+        "agent": "Deming",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "2.2"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "2.2"
+      }
+    ],
+    "vote_distribution": {
+      "2.2": 4,
+      "1.3": 1
+    },
+    "consensus_mode": "2.2",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  },
+  {
+    "trace_id": 136,
+    "mas_name": "AG2",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "MMLU",
+    "true_mode": "2.2",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "2.2"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "2.2"
+      },
+      {
+        "agent": "Deming",
+        "vote": "2.2"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "2.2"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "2.2"
+      }
+    ],
+    "vote_distribution": {
+      "2.2": 5
+    },
+    "consensus_mode": "2.2",
+    "consensus_count": 5,
+    "consensus_reached": true,
+    "agreement_rate": 1.0
+  },
+  {
+    "trace_id": 3,
+    "mas_name": "AG2",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "GSM",
+    "true_mode": "2.2",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "2.4"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "1.5"
+      },
+      {
+        "agent": "Deming",
+        "vote": "2.2"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "2.2"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "2.2"
+      }
+    ],
+    "vote_distribution": {
+      "2.4": 1,
+      "1.5": 1,
+      "2.2": 3
+    },
+    "consensus_mode": "2.2",
+    "consensus_count": 3,
+    "consensus_reached": true,
+    "agreement_rate": 0.6
+  },
+  {
+    "trace_id": 105,
+    "mas_name": "AG2",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "MMLU",
+    "true_mode": "2.2",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "3.3"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "2.2"
+      },
+      {
+        "agent": "Deming",
+        "vote": "2.2"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "2.2"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "2.2"
+      }
+    ],
+    "vote_distribution": {
+      "3.3": 1,
+      "2.2": 4
+    },
+    "consensus_mode": "2.2",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  },
+  {
+    "trace_id": 36,
+    "mas_name": "MetaGPT",
+    "llm_name": "Claude",
+    "benchmark_name": "ProgramDev",
+    "true_mode": "2.2",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "2.2"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "2.2"
+      },
+      {
+        "agent": "Deming",
+        "vote": "2.2"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "2.2"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "2.2"
+      }
+    ],
+    "vote_distribution": {
+      "2.2": 5
+    },
+    "consensus_mode": "2.2",
+    "consensus_count": 5,
+    "consensus_reached": true,
+    "agreement_rate": 1.0
+  },
+  {
+    "trace_id": 37,
+    "mas_name": "AG2",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "Olympiad",
+    "true_mode": "2.2",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "2.4"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "2.2"
+      },
+      {
+        "agent": "Deming",
+        "vote": "2.2"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "2.2"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "2.2"
+      }
+    ],
+    "vote_distribution": {
+      "2.4": 1,
+      "2.2": 4
+    },
+    "consensus_mode": "2.2",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  },
+  {
+    "trace_id": 118,
+    "mas_name": "AG2",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "Olympiad",
+    "true_mode": "2.3",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "2.3"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "3.3"
+      },
+      {
+        "agent": "Deming",
+        "vote": "2.3"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "2.3"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "2.3"
+      }
+    ],
+    "vote_distribution": {
+      "2.3": 4,
+      "3.3": 1
+    },
+    "consensus_mode": "2.3",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  },
+  {
+    "trace_id": 189,
+    "mas_name": "AG2",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "Olympiad",
+    "true_mode": "2.3",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "2.3"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "2.3"
+      },
+      {
+        "agent": "Deming",
+        "vote": "3.1"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "3.3"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "2.3"
+      }
+    ],
+    "vote_distribution": {
+      "2.3": 3,
+      "3.1": 1,
+      "3.3": 1
+    },
+    "consensus_mode": "2.3",
+    "consensus_count": 3,
+    "consensus_reached": true,
+    "agreement_rate": 0.6
+  },
+  {
+    "trace_id": 205,
+    "mas_name": "AG2",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "Olympiad",
+    "true_mode": "2.4",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "2.4"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "2.4"
+      },
+      {
+        "agent": "Deming",
+        "vote": "2.4"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "2.4"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "2.4"
+      }
+    ],
+    "vote_distribution": {
+      "2.4": 5
+    },
+    "consensus_mode": "2.4",
+    "consensus_count": 5,
+    "consensus_reached": true,
+    "agreement_rate": 1.0
+  },
+  {
+    "trace_id": 32,
+    "mas_name": "ChatDev",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "ProgramDev",
+    "true_mode": "2.6",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Deming",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "2.6"
+      }
+    ],
+    "vote_distribution": {
+      "3.2": 1,
+      "2.6": 4
+    },
+    "consensus_mode": "2.6",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  },
+  {
+    "trace_id": 158,
+    "mas_name": "AG2",
+    "llm_name": "Claude",
+    "benchmark_name": "GSM",
+    "true_mode": "2.6",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Deming",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "2.6"
+      }
+    ],
+    "vote_distribution": {
+      "2.6": 5
+    },
+    "consensus_mode": "2.6",
+    "consensus_count": 5,
+    "consensus_reached": true,
+    "agreement_rate": 1.0
+  },
+  {
+    "trace_id": 152,
+    "mas_name": "Magentic",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "GAIA",
+    "true_mode": "2.6",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "2.4"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Deming",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "2.6"
+      }
+    ],
+    "vote_distribution": {
+      "2.4": 1,
+      "2.6": 4
+    },
+    "consensus_mode": "2.6",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  },
+  {
+    "trace_id": 128,
+    "mas_name": "AG2",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "Olympiad",
+    "true_mode": "2.6",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Deming",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "2.6"
+      }
+    ],
+    "vote_distribution": {
+      "2.6": 4,
+      "3.2": 1
+    },
+    "consensus_mode": "2.6",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  },
+  {
+    "trace_id": 168,
+    "mas_name": "AG2",
+    "llm_name": "Claude",
+    "benchmark_name": "GSM",
+    "true_mode": "2.6",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Deming",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "1.1"
+      }
+    ],
+    "vote_distribution": {
+      "2.6": 4,
+      "1.1": 1
+    },
+    "consensus_mode": "2.6",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  },
+  {
+    "trace_id": 107,
+    "mas_name": "Magentic",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "GAIA",
+    "true_mode": "2.6",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Deming",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "1.3"
+      }
+    ],
+    "vote_distribution": {
+      "2.6": 3,
+      "1.3": 2
+    },
+    "consensus_mode": "2.6",
+    "consensus_count": 3,
+    "consensus_reached": true,
+    "agreement_rate": 0.6
+  },
+  {
+    "trace_id": 35,
+    "mas_name": "AG2",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "Olympiad",
+    "true_mode": "2.6",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Deming",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "2.6"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "2.6"
+      }
+    ],
+    "vote_distribution": {
+      "2.6": 5
+    },
+    "consensus_mode": "2.6",
+    "consensus_count": 5,
+    "consensus_reached": true,
+    "agreement_rate": 1.0
+  },
+  {
+    "trace_id": 42,
+    "mas_name": "ChatDev",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "ProgramDev",
+    "true_mode": "3.1",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "3.1"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Deming",
+        "vote": "3.3"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "3.1"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "3.1"
+      }
+    ],
+    "vote_distribution": {
+      "3.1": 3,
+      "3.2": 1,
+      "3.3": 1
+    },
+    "consensus_mode": "3.1",
+    "consensus_count": 3,
+    "consensus_reached": true,
+    "agreement_rate": 0.6
+  },
+  {
+    "trace_id": 174,
+    "mas_name": "AG2",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "Olympiad",
+    "true_mode": "3.1",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "3.1"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "3.1"
+      },
+      {
+        "agent": "Deming",
+        "vote": "3.1"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "3.1"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "3.1"
+      }
+    ],
+    "vote_distribution": {
+      "3.1": 5
+    },
+    "consensus_mode": "3.1",
+    "consensus_count": 5,
+    "consensus_reached": true,
+    "agreement_rate": 1.0
+  },
+  {
+    "trace_id": 160,
+    "mas_name": "AG2",
+    "llm_name": "Claude",
+    "benchmark_name": "GSM",
+    "true_mode": "3.1",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "3.1"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "3.1"
+      },
+      {
+        "agent": "Deming",
+        "vote": "1.1"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "3.1"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "3.1"
+      }
+    ],
+    "vote_distribution": {
+      "3.1": 4,
+      "1.1": 1
+    },
+    "consensus_mode": "3.1",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  },
+  {
+    "trace_id": 164,
+    "mas_name": "AG2",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "Olympiad",
+    "true_mode": "3.2",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "3.1"
+      },
+      {
+        "agent": "Deming",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "3.2"
+      }
+    ],
+    "vote_distribution": {
+      "3.2": 4,
+      "3.1": 1
+    },
+    "consensus_mode": "3.2",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  },
+  {
+    "trace_id": 39,
+    "mas_name": "MetaGPT",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "ProgramDev",
+    "true_mode": "3.2",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Deming",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "3.2"
+      }
+    ],
+    "vote_distribution": {
+      "3.2": 5
+    },
+    "consensus_mode": "3.2",
+    "consensus_count": 5,
+    "consensus_reached": true,
+    "agreement_rate": 1.0
+  },
+  {
+    "trace_id": 52,
+    "mas_name": "MetaGPT",
+    "llm_name": "Claude",
+    "benchmark_name": "ProgramDev",
+    "true_mode": "3.2",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Deming",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "3.2"
+      }
+    ],
+    "vote_distribution": {
+      "3.2": 5
+    },
+    "consensus_mode": "3.2",
+    "consensus_count": 5,
+    "consensus_reached": true,
+    "agreement_rate": 1.0
+  },
+  {
+    "trace_id": 49,
+    "mas_name": "MetaGPT",
+    "llm_name": "Claude",
+    "benchmark_name": "ProgramDev",
+    "true_mode": "3.2",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "3.3"
+      },
+      {
+        "agent": "Deming",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "1.3"
+      }
+    ],
+    "vote_distribution": {
+      "3.2": 2,
+      "3.3": 1,
+      "1.3": 2
+    },
+    "consensus_mode": "3.2",
+    "consensus_count": 2,
+    "consensus_reached": false,
+    "agreement_rate": 0.4
+  },
+  {
+    "trace_id": 54,
+    "mas_name": "MetaGPT",
+    "llm_name": "Claude",
+    "benchmark_name": "ProgramDev",
+    "true_mode": "3.2",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Deming",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "2.2"
+      }
+    ],
+    "vote_distribution": {
+      "3.2": 4,
+      "2.2": 1
+    },
+    "consensus_mode": "3.2",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  },
+  {
+    "trace_id": 53,
+    "mas_name": "AG2",
+    "llm_name": "Claude",
+    "benchmark_name": "GSM",
+    "true_mode": "3.2",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Deming",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "3.2"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "3.2"
+      }
+    ],
+    "vote_distribution": {
+      "3.2": 5
+    },
+    "consensus_mode": "3.2",
+    "consensus_count": 5,
+    "consensus_reached": true,
+    "agreement_rate": 1.0
+  },
+  {
+    "trace_id": 12,
+    "mas_name": "ChatDev",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "ProgramDev",
+    "true_mode": "3.3",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "3.3"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "3.3"
+      },
+      {
+        "agent": "Deming",
+        "vote": "3.3"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "3.3"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "3.3"
+      }
+    ],
+    "vote_distribution": {
+      "3.3": 5
+    },
+    "consensus_mode": "3.3",
+    "consensus_count": 5,
+    "consensus_reached": true,
+    "agreement_rate": 1.0
+  },
+  {
+    "trace_id": 43,
+    "mas_name": "ChatDev",
+    "llm_name": "GPT-4o",
+    "benchmark_name": "ProgramDev",
+    "true_mode": "3.3",
+    "votes": [
+      {
+        "agent": "Turing",
+        "vote": "3.3"
+      },
+      {
+        "agent": "Bayes",
+        "vote": "3.3"
+      },
+      {
+        "agent": "Deming",
+        "vote": "3.3"
+      },
+      {
+        "agent": "Shannon",
+        "vote": "1.3"
+      },
+      {
+        "agent": "Babbage",
+        "vote": "3.3"
+      }
+    ],
+    "vote_distribution": {
+      "3.3": 4,
+      "1.3": 1
+    },
+    "consensus_mode": "3.3",
+    "consensus_count": 4,
+    "consensus_reached": true,
+    "agreement_rate": 0.8
+  }
+]

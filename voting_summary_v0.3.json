@@ -1,0 +1,26 @@
+{
+  "corpus": {
+    "traces": 44,
+    "modes": 10,
+    "source": "MAST Public Dataset (Cemri et al. 2025, arxiv 2503.13657)",
+    "note": "v0.3 baseline on 44 real traces; full 63-trace stratified corpus requires external MAST dataset access"
+  },
+  "voting_setup": {
+    "agents": [
+      "Turing",
+      "Bayes",
+      "Deming",
+      "Shannon",
+      "Babbage"
+    ],
+    "consensus_rule": "3 of 5 (quorum)",
+    "phase": "blind"
+  },
+  "results": {
+    "consensus_rate": 0.9772727272727273,
+    "mean_agreement": 0.8409090909090909,
+    "kappa": 0.8188746706812194,
+    "p_observed": 0.8409090909090909,
+    "p_expected": 0.12165289256198346
+  }
+}
