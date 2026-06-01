@@ -1,3 +1,13 @@
+# ⚠️ Project Status: Retired (2026-05-29)
+
+**This project was killed_late on 2026-05-29 per founder directive (SLL v2).**
+
+**Kill reason:** Classifier track retired. The project used borrowed CC-BY-NC-ND MAST data, duplicated MAST's own annotator, and offered no novel SLL edge. The consensus-voting thesis may re-enter via the new funnel + realism gate if warranted.
+
+The code and artifacts below are preserved for reference but are **not under active development**.
+
+---
+
 # Six Sigma Classifier — Architecture & Design
 
 ## Project Goal
